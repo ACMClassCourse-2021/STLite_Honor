@@ -18,24 +18,35 @@ protected:
     class node {
     public:
         /**
-         * TODO: add data members and methods
+         * add data members and constructors & destructor
          */
 
     };
 
-private:
+protected:
     /**
-     * TODO: add data members
+     * add data members for linked list as protected members
      */
+
+    /**
+     * insert node cur before node pos
+     * return the inserted node cur
+     */
+    node *insert(node *pos, node *cur) {}
+    /**
+     * remove node pos from list (no need to delete the node)
+     * return the removed node pos
+     */
+    node *erase(node *pos) {}
 
 public:
     class const_iterator;
     class iterator {
     private:
         /**
-		 * TODO add data members
-		 *   just add whatever you want.
-		 */
+         * TODO add data members
+         *   just add whatever you want.
+         */
 
     public:
         /**
@@ -60,13 +71,13 @@ public:
          */
         T & operator *() const {}
         /**
-		 * TODO it->field
-		 * remember to throw if iterator is invalid
-		 */
+         * TODO it->field
+         * remember to throw if iterator is invalid
+         */
         T * operator ->() const noexcept {}
         /**
-		 * a operator to check whether two iterators are same (pointing to the same memory).
-		 */
+         * a operator to check whether two iterators are same (pointing to the same memory).
+         */
         bool operator==(const iterator &rhs) const {}
         bool operator==(const const_iterator &rhs) const {}
         /**
@@ -81,18 +92,18 @@ public:
      * should be able to construct from an iterator.
      */
     class const_iterator {
-        // TODO
+
     };
     /**
      * TODO Constructs
      * Atleast two: default constructor, copy constructor
      */
-    list() {}
+    list() : num(0) {}
     list(const list &other) {}
     /**
      * TODO Destructor
      */
-    ~list() {}
+    virtual ~list() {}
     /**
      * TODO Assignment operator
      */
@@ -104,56 +115,57 @@ public:
     const T & front() const {}
     const T & back() const {}
     /**
-	 * returns an iterator to the beginning.
-	 */
+     * returns an iterator to the beginning.
+     */
     iterator begin() {}
     const_iterator cbegin() const {}
     /**
-	 * returns an iterator to the end.
-	 */
+     * returns an iterator to the end.
+     */
     iterator end() {}
     const_iterator cend() const {}
     /**
-	 * checks whether the container is empty.
-	 */
-    bool empty() const {}
+     * checks whether the container is empty.
+     */
+    virtual bool empty() const {}
     /**
-	 * returns the number of elements
-	 */
-    size_t size() const {}
+     * returns the number of elements
+     */
+    virtual size_t size() const {}
+
     /**
-	 * clears the contents
-	 */
-    void clear() {}
+     * clears the contents
+     */
+    virtual void clear() {}
     /**
      * insert value before pos (pos may be the end() iterator)
      * return an iterator pointing to the inserted value
      * throw if the iterator is invalid
      */
-    iterator insert(iterator pos, const T &value) {}
+    virtual iterator insert(iterator pos, const T &value) {}
     /**
      * remove the element at pos (the end() iterator is invalid)
      * returns an iterator pointing to the following element, if pos pointing to the last element, end() will be returned.
      * throw if the container is empty, the iterator is invalid
      */
-    iterator erase(iterator pos) {}
+    virtual iterator erase(iterator pos) {}
     /**
-	 * adds an element to the end
-	 */
+     * adds an element to the end
+     */
     void push_back(const T &value) {}
     /**
-	 * removes the last element
-	 * throw when the container is empty.
-	 */
+     * removes the last element
+     * throw when the container is empty.
+     */
     void pop_back() {}
     /**
-	 * inserts an element to the beginning.
-	 */
+     * inserts an element to the beginning.
+     */
     void push_front(const T &value) {}
     /**
-	 * removes the first element.
-	 * throw when the container is empty.
-	 */
+     * removes the first element.
+     * throw when the container is empty.
+     */
     void pop_front() {}
     /**
      * sort the values in ascending order with operator< of T
@@ -165,6 +177,7 @@ public:
      * container other becomes empty after the operation
      * for equivalent elements in the two lists, the elements from *this shall always precede the elements from other
      * the order of equivalent elements of *this and other does not change.
+     * no elements are copied or moved
      */
     void merge(list &other) {}
     /**

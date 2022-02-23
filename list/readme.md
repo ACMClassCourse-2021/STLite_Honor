@@ -18,13 +18,7 @@
 
 * `front()` & `back()`
 
-  返回链表头部内容和尾部内容
-
-* `empty()`：链表是否为空
-
-* `size()`：返回链表长度
-
-* `clear()`：清空链表内容
+* `empty()`，`size()`,`clear()`
 
 * `insert(iterator pos, const T &value)`
 
@@ -36,11 +30,7 @@
 
 * `push_back()` & `push_front()`
 
-  从尾部或者头部插入节点
-
 * `pop_back()` & `pop_front()`
-
-  从尾部或者头部删除一个节点
 
 * `sort()`：将链表内容排序（升序）
 
@@ -53,7 +43,7 @@
 ## 提示
 
 * 不保证模板类型有默认构造函数，处理方法同`vector`。保证模板类型有`operator<`和`operator==`的定义。
-* `sort()`，`merge()` **允许**数据的拷贝和移动， `reverse()`要求**不**拷贝或者移动数据。
+* `sort()` **允许**数据的拷贝和移动，`merge()`和 `reverse()`要求**不**拷贝或者移动数据。
 
 * 提供`algorithm.hpp`，可以使用`sjtu::sort()`，接口为数组起始和终止位置以及一个比较函数（参考代码）。
-  * 可以尝试显示的实例化，例如`sjtu::sort<T>()`调用。
+  * 可以尝试显示的实例化，例如`sjtu::sort<T *>()`调用。

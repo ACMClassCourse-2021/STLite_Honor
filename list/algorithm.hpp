@@ -23,6 +23,26 @@ void sort(T *begin, T *end, std::function<bool(const T&, const T&)> cmp){
     if (end - i > 1) sort(i, end, cmp);
 }
 
+template<class T>
+T *upper_bound(const T *begin, const T *end, const T &num){
+    int l = -1, r = end - begin;
+    while (l + 1 < r){
+        int mid = (l + r) >> 1;
+        if (num < *(begin + mid)) r = mid; else l = mid;
+    }
+    return const_cast<T *>(begin + r);
+}
+
+template<class T>
+T *lower_bound(const T *begin, const T *end, const T &num){
+    int l = -1, r = end - begin;
+    while (l + 1 < r){
+        int mid = (l + r) >> 1;
+        if (num <= *(begin + mid)) r = mid; else l = mid;
+    }
+    return const_cast<T *>(begin + r);
+}
+
 };
 
 #endif //SJTU_ALGORITHM_HPP

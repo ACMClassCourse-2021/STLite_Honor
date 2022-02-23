@@ -4,9 +4,9 @@
 
 本学期大作业要求同学们完成下面五个任务：
 
-1. vector (6 pts)
-2. list (6 pts)
-2. priority queue (6 pts)
+1. vector (5 pts)
+2. list (5 pts)
+2. priority queue (7 pts)
 2. linked hash map (8 pts)
 3. map / B+ tree (12 pts)
 
@@ -18,13 +18,11 @@
 
 **注意：对于每个任务，在 OJ 上通过测试数据可获得 80% 的分数，Code Review 占 20% 的分数。**
 
-关于windows10下ubuntu wsl的使用，详见[windows10下ubuntu wsl的简单使用指南](./tutorials/windows10下ubuntu wsl的简单使用指南.md)
-
 ### 关于 priority queue 的评分说明
 
 1. OJ 上会有两道题目：priority queue (easy) 和 priority queue (hard)，你需要**任选一个**完成
-1. 在 OJ 上通过 priority queue (easy)，获得满分 6 分；
-1. 在 OJ 上视 priority queue (hard) 的通过情况，最高获得 8 分；
+1. 在 OJ 上通过 priority queue (easy)，获得满分 7 分；
+1. 在 OJ 上视 priority queue (hard) 的通过情况，最高获得 9 分；
 2. 即便你完成了两个版本，**只有一个会计入分数**；
 3. 多余的分数可以优先溢出到小作业或者机考。
 
@@ -44,7 +42,7 @@
 1. list: 发布时间：第三周；截止时间：**第七周周六(4月三日) 23:00**
 1. priority queue: 发布时间：第七周；截止时间：**第十周周六(4月24日) 23:00**
 1. linked hash map: 发布时间：第十周；截止时间：**第十二周周六(5月8日) 23:00**
-1. map / B+ tree: 发布时间：第十二周；截止时间：**第十七周周六(6月12日) 23:00**（暂定）
+1. map / B+ tree: 发布时间：第十二周；截止时间：**第十六周周六(6月5日) 23:00**
 
 请大家严格把握好时间！建议尽早开工尽早完成！
 
