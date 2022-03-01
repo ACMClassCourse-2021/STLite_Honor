@@ -98,7 +98,7 @@ public:
      * TODO Constructs
      * Atleast two: default constructor, copy constructor
      */
-    list() : num(0) {}
+    list() {}
     list(const list &other) {}
     /**
      * TODO Destructor
