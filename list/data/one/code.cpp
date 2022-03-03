@@ -8,7 +8,7 @@
 #include <iostream>
 #include <list>
 
-const int N = 2e5;
+const int N = 5e4;
 
 template<typename T>
 bool equal(const std::list<T> &x, const sjtu::list<T> &y) {

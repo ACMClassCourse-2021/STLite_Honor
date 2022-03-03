@@ -12,7 +12,7 @@
 #include "class-integer.hpp"
 #include "class-matrix.hpp"
 
-const int MAXN = 500005;
+const int MAXN = 50005;
 
 enum Color{
 	Red, Green, Blue, Normal

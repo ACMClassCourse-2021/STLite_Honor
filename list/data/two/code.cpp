@@ -8,7 +8,7 @@
 #include <iostream>
 #include <list>
 
-const int N = 2e5;
+const int N = 5e4;
 
 int ansCounter = 0, myCounter = 0, noUseCounter = 0;
 class DynamicType {
