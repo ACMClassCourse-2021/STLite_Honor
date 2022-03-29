@@ -337,9 +337,12 @@ void tester7() {
             
         }
 
+        stdlist1.sort(), stdlist2.sort();
+        mylist1.sort(), mylist2.sort();
+
         Int::born = 0;
         Int::dead = 0;
-
+        
         stdlist1.merge(stdlist2);
         mylist1.merge(mylist2);
         

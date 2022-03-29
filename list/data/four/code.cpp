@@ -148,6 +148,9 @@ void tester1() {
             else if (!ministd.empty()) ministd.erase(stdit), minimy.erase(myit);
         }
 
+        stdlist.sort(), mylist.sort();
+        ministd.sort(), minimy.sort();
+        
         stdlist.merge(ministd), mylist.merge(minimy);
 
         if (!equal(stdlist, mylist)) {
